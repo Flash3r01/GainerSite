@@ -1,4 +1,13 @@
 html{
     background-color: black;
     color: limegreen;
+    text-align: center;
+}
+
+#header{
+    min-height: 40px;
+    background-color: #336;
+    width: 100%;
+    padding: 4em, 0px;
+    text-align: center;
 }
