@@ -50,3 +50,13 @@ a{
     align-items: center;
     font-size: smaller;
 }
+
+#mainContentContainer{
+    width: 80%;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    box-shadow: 2 2 #222;
+    margin: 0 10%;
+    overflow: visible;
+    height: calc(100vh - 110px);
+}
