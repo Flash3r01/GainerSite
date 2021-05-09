@@ -1,5 +1,10 @@
 html{
-    background-color: black;
+    background: rgb(15, 60, 15);
+    background: linear-gradient(90deg, 
+        rgb(15, 60, 15) 0%, 
+        black     15%, 
+        black     85%, 
+        rgb(15, 60, 15) 100%);
     color: limegreen;
     text-align: center;
 }
@@ -16,10 +21,11 @@ a{
 #header{
     height: 80px;
     min-height: 80px;
-    background-color: #666;
+    background-color: black;
     width: 100%;
     text-align: center;
     position: relative;
+    border-bottom: 4px double #666;
 }
 .headerButtonContainer{
     position: absolute;
@@ -38,25 +44,34 @@ a{
 }
 
 #footer{
-    width: 100%;
+    width: 80%;
     height: 30px;
-    border-top: 2px solid #ccc;
+    position: relative;
+    left: 10%;
+    border-top: 2px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
     background-color: #222;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     font-size: smaller;
 }
 
 #mainContentContainer{
+    background-color: black;
     width: 80%;
     border-left: 1px solid #666;
     border-right: 1px solid #666;
     box-shadow: 2 2 #222;
     margin: 0 10%;
     overflow: visible;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 116px); /* Minus Header, header border, footer and footer border*/
+}
+
+/*First Header in the main-content should not have any magin, so the sidelines reach the top*/
+#mainContentContainer > h1:first-child{
+    margin-top: 0;
+    padding-top: 1em;
 }
