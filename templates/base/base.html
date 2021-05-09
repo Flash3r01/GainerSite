@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    {% include "head.html" %}
+    {% include "base/head.html" %}
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        {% include "header.html" %}
+        {% include "base/header.html" %}
         <div id="mainContentContainer">
             {% block content %}{% endblock %}
         </div>
-        {% include "footer.html" %}
+        {% include "base/footer.html" %}
     </body>
 </html>
