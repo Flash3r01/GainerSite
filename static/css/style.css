@@ -1,3 +1,8 @@
+::selection{
+    background-color: cyan;
+    color: purple;
+}
+
 html{
     background: rgb(15, 60, 15);
     background: linear-gradient(90deg, 
@@ -42,6 +47,19 @@ a{
     justify-content: center;
     align-items: center;
 }
+.headerButton:hover{
+    animation: raise 0.05s linear 0s 1 normal forwards;
+}
+
+@keyframes raise {
+    0%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(1.1, 1.1);
+        background-color: #222;
+    }
+}
 
 #footer{
     width: 80%;
@@ -66,7 +84,7 @@ a{
     border-right: 1px solid #666;
     margin: 0 10%;
     overflow: visible;
-    height: calc(100vh - 116px); /* Minus Header, header border, footer and footer border*/
+    min-height: calc(100vh - 116px); /* Minus Header, header border, footer and footer border*/
 }
 
 /*First Header in the main-content should not have any magin, so the sidelines reach the top*/
