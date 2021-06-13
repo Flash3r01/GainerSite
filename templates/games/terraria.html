@@ -1,0 +1,24 @@
+{% extends "base/contentBoxBase.html" %}
+
+{% block text %}
+<h2>Terraria</h2>
+<p>
+    Terraria is a 2D adventure game released in 2011.
+    It started as a Minecraft clone with a focus on combat.
+    Since then it has received a lot of big content additions that fundamentally changed the feeling of the game.
+    Its gameplay can be split in two phases:
+</p>
+<p>
+    In the first phase the game focuses on exploring the world and defending yourself against common enemies,
+    giant eyeballs and even invasions.
+    <br><br>
+    In the second phase the player is much more active, inviting otherworldly monsters to their world
+    just to slay them and collect their riches.
+</p>
+<p><a href="https://terraria.org/">Website</a> - <a href="https://store.steampowered.com/app/105600/Terraria/">Steam</a> - <a href="https://terraria.fandom.com/wiki/Terraria_Wiki">Wiki</a></p>
+{% endblock text %}
+
+
+{% block image %}
+<img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
+{% endblock image %}

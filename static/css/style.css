@@ -87,7 +87,7 @@ a{
     min-height: calc(100vh - 116px); /* Minus Header, header border, footer and footer border*/
 }
 
-/*First Header in the main-content should not have any magin, so the sidelines reach the top*/
+/* First Header in the main-content should not have any margin, so the sidelines reach the top */
 #mainContentContainer > h1:first-child{
     margin-top: 0;
     padding-top: 1em;
@@ -96,4 +96,42 @@ a{
 #mainContentContainer a{
     font-weight: bold;
     text-decoration: underline;
+    color: rebeccapurple;
+}
+
+/* Styling for the content Boxes */
+.contentBox{
+    padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.contentBox:nth-child(even){
+    flex-direction: row-reverse;
+}
+.contentBox:nth-child(odd){
+    flex-direction: row;
+}
+
+/* Content Box Images */
+.contentBox>div.contentBoxImage{
+    flex: 1 0 100px;
+}
+.contentBox>div.contentBoxImage>img{
+    width: 100%;
+    height: auto;
+}
+
+/* Content Box Text */
+.contentBox>div.contentBoxText{
+    flex: 2 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contentBox:nth-child(even)>div.contentBoxText{
+    text-align: left;
+}
+.contentBox:nth-child(odd)>div.contentBoxText{
+    text-align: right;
 }

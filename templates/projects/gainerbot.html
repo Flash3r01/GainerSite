@@ -1,0 +1,20 @@
+{% extends "base/contentBoxBase.html" %}
+
+
+{% block text %}
+<h2>The Gainerbot</h2>
+<p>
+    Sweating, grunting, never-sleeping.
+    The Gainerbot is the first bigger project I started developing (as seen by the design decisions 🍝).
+    It is a bot for the popular voice, text and video messenger <a href="https://discord.com/">Discord</a>.
+    Its features include, but are not limited to, spamming the chat, insulting your friends, 
+    consoring unacceptable words and playing audio.
+    I want to mention the awesome <a href="https://github.com/eliaspr/DrachenlordBot">DrachenlordBot</a>, 
+    that inspired me to write my own bot.
+    The source code for the Gainerbot is also available on <a href="https://github.com/Flash3r01/GainerBot">GitHub</a>.
+</p>
+{% endblock text %}
+
+{% block image %}
+<img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
+{% endblock image %}
