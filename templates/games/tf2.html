@@ -1,0 +1,24 @@
+{% extends "base/contentBoxBase.html" %}
+
+{% block text %}
+<h2>Team Fortress 2</h2>
+<p>
+    Team Fortress 2 is a class based shooter released in 2007.
+    It has a multitude of different and unique gamemodes to choose from.
+    For example: King of the Hill, Capture the Flag, Attack/Defend (Control Point), Symmetrical Control Point,
+    Domination Control Point, Payload, Payload Race, Mann vs. Machine and many more.
+</p>
+<p>
+    There is also a inventory and loadout system which lets you find and equip new weapons.
+    Some of them only have small stat changes while other completely change how you play the game.
+    Of course there are also comsetics and especially HATS to customize each class.
+    The community is still pretty active and there are also trading servers in which you can trade your unwanted items
+    for something usefull.
+</p>
+<p><a href="https://www.teamfortress.com/">Website</a> - <a href="https://store.steampowered.com/app/440/Team_Fortress_2/">Steam</a> - <a href="https://wiki.teamfortress.com/wiki/Main_Page">Wiki</a></p>
+{% endblock text %}
+
+
+{% block image %}
+<img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
+{% endblock image %}
