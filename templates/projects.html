@@ -2,36 +2,8 @@
 
 {% block content %}
 <h1>Projects</h1>
-<div class="contentBox">
-    <div class="contentBoxText">
-        <h2>Gainersite</h2>
-        <p>
-            The Gainersite is a simple website that provides Information about me and what I do.
-            Its development started because I wanted to familliarize myself with the basics of css, html and web development.
-            Contrary to most websites nowadys the focus is on providing the content completely free and fast.
-            The source code is available on <a href="https://github.com/Flash3r01/GainerSite/">GitHub</a>.
-        </p>
-    </div>
-    <div class="contentBoxImage">
-        <img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
-    </div>
-</div>
-<div class="contentBox">
-    <div class="contentBoxText">
-        <h2>The Gainerbot</h2>
-        <p>
-            Sweating, grunting, never-sleeping.
-            The Gainerbot is the first bigger project I started developing (as seen by the design decisions 🍝).
-            It is a bot for the popular voice, text and video messenger <a href="https://discord.com/">Discord</a>.
-            Its features include, but are not limited to, spamming the chat, insulting your friends, 
-            consoring unacceptable words and playing audio.
-            I want to mention the awesome <a href="https://github.com/eliaspr/DrachenlordBot">DrachenlordBot</a>, 
-            that inspired me to write my own bot.
-            The source code for the Gainerbot is also available on <a href="https://github.com/Flash3r01/GainerBot">GitHub</a>.
-        </p>
-    </div>
-    <div class="contentBoxImage">
-        <img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
-    </div>
-</div>
+
+{% include "projects/gainersite.html" %}
+
+{% include "projects/gainerbot.html" %}
 {% endblock content %}

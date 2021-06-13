@@ -1,0 +1,16 @@
+{% extends "base/contentBoxBase.html" %}
+
+
+{% block text %}
+<h2>Gainersite</h2>
+<p>
+    The Gainersite is a simple website that provides Information about me and what I do.
+    Its development started because I wanted to familliarize myself with the basics of css, html and web development.
+    Contrary to most websites nowadys the focus is on providing the content completely free and fast.
+    The source code is available on <a href="https://github.com/Flash3r01/GainerSite/">GitHub</a>.
+</p>
+{% endblock text %}
+
+{% block image %}
+<img src="{{ url_for('static', filename='image/missingPicture.svg') }}">
+{% endblock image %}
